@@ -90,6 +90,24 @@ img {
 	font-style: normal;
 }
 
+@font-face {
+	font-family: PFD_Light;
+	src: url(../fonts/PFDinCondensedLight.eot);
+	src: url(../fonts/PFDinCondensedLight.ttf);
+	src: url(../fonts/PFDinCondensedLight.woff);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: PFD_Medium;
+	src: url(../fonts/PFDinCondensedMedium.eot);
+	src: url(../fonts/PFDinCondensedMedium.ttf);
+	src: url(../fonts/PFDinCondensedMedium.woff);
+	font-weight: normal;
+	font-style: normal;
+}
+
 html {
 	font-size: 100%; }
 
@@ -97,6 +115,12 @@ html {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	text-align: center; }
+
+.clearfix::after{
+	content: '';
+	display: table;
+	clear: both;
+}
 
 .header {
 	width: 100%;
@@ -109,42 +133,58 @@ html {
 
 .header__container{
 	position: relative;
-	width: 50%;
+	width: 550px;
 	margin: 0 auto;
+	padding: 150px 0;
 }
 
 .header__h1 {
 	font-family: "Intro", sans-serif;
-	font-size: 54px;
+	font-size: 62px;
 	color: #ffffff;
 	text-transform: uppercase;
+	position: relative;
+}
+
+.header__h1::after{
+	content: "Мир мангалов";
+	font-family: "Intro", sans-serif;
+	font-size: 62px;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0);
+	-webkit-text-stroke: 1px #ffffff;
+	position: absolute;
+	top: 2px;
+	left: 17px;
 }
 
 .header__h2_best{
 	font-family: "Lobster", sans-serif;
-	font-size: 5em;
+	font-size: 85px;
 	color: #ffffff;
+	margin-bottom: 33px;
 }
 
 .header__h2_uni{
-	font-family: "PFD", sans-serif;
+	font-family: "PFD_Medium", sans-serif;
 	font-size: 54px;
 	color: #ffffff;
 	text-transform: uppercase;
 	text-shadow: 2px 2px 0 #9a211a;
 	letter-spacing: 2px;
+	margin-bottom: 33px;
 }
 
 .header__hr {
-	width: 500px;
 	border: none;
 	border-top: 1px solid #ffffff;
 	border-bottom: 1px solid #9a211a;
+	margin-bottom: 33px;
 }
 
 .header__contacts{
-	font-family:"PFD", sans-serif;
-	font-size: 18px;
+	font-family:"PFD_Medium", sans-serif;
+	font-size: 36px;
 	color: #ffffff;
 	text-transform: uppercase;
 	display: block;
