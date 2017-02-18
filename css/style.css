@@ -40,6 +40,11 @@ q:before, q:after, blockquote:before, blockquote:after {
 	content: "";
 	content: none; }
 
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
 a img {
 	border: none; }
 
@@ -76,6 +81,15 @@ img {
 	font-weight: normal;
 	font-style: normal; }
 
+@font-face {
+	font-family: PFD;
+	src: url(../fonts/PFDinCondensedRegular.eot);
+	src: url(../fonts/PFDinCondensedRegular.ttf);
+	src: url(../fonts/PFDinCondensedRegular.woff);
+	font-weight: normal;
+	font-style: normal;
+}
+
 html {
 	font-size: 100%; }
 
@@ -88,11 +102,58 @@ html {
 	width: 100%;
 	min-width: 1024px;
 	max-width: 1900px;
-	background: url("../img/header.jpg"); }
+	background: url("../img/header.jpg") no-repeat bottom center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.header__container{
+	position: relative;
+	width: 50%;
+	margin: 0 auto;
+}
 
 .header__h1 {
 	font-family: "Intro", sans-serif;
-	font-size: 58px;
+	font-size: 54px;
 	color: #ffffff;
 	text-transform: uppercase;
+}
+
+.header__h2_best{
+	font-family: "Lobster", sans-serif;
+	font-size: 5em;
+	color: #ffffff;
+}
+
+.header__h2_uni{
+	font-family: "PFD", sans-serif;
+	font-size: 54px;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 0 #9a211a;
+	letter-spacing: 2px;
+}
+
+.header__hr {
+	width: 500px;
+	border: none;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #9a211a;
+}
+
+.header__contacts{
+	font-family:"PFD", sans-serif;
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: uppercase;
+	display: block;
+}
+
+.header__contacts_mail{
+	float: left;
+}
+
+.header__contacts_phone{
+	float: right;
 }
