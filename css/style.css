@@ -132,6 +132,8 @@ html {
 
 /*********************************Main CSS******************************************/
 
+/***********HEADER***********/
+
 a {
 	text-decoration: none;
 	color: #ffffff;
@@ -146,7 +148,7 @@ a {
 }
 
 .font_2 {
-	font-family: "Lobster", sans-serif;
+	font-family: "PFD_Light", sans-serif;
 }
 
 .font_3 {
@@ -156,6 +158,7 @@ a {
 .clearfix::after {
 	content: '';
 	display: table;
+	clear: both;
 }
 
 .cntBlock {
@@ -168,9 +171,10 @@ a {
 	background-size: cover;
 	z-index: -1;
 	position: relative;
+	min-width: 675px;
 }
 
-.cntBlock_header::after{
+.cntBlock_header::after {
 	content: '';
 	background: rgba(0, 0, 0, 0.5);
 	width: 100%;
@@ -182,29 +186,27 @@ a {
 
 .cntBlock__container {
 	width: 90%;
-	min-width: 1024px;
-	max-width: 1900px;
 	margin: 0 auto;
 	padding: 10% 0;
 }
 
-.wrap{
+.wrap {
 	margin-bottom: 19px;
 }
 
-.wrap_uni{
+.wrap_uni {
 	margin-bottom: 22px;
 }
 
-.wrap_hr{
-	margin:29px;
+.wrap_hr {
+	margin: 29px;
 }
 
 .h1 {
 	font-size: 3.875em;
 }
 
-.h1_logo{
+.h1_logo {
 	display: inline-block;
 	width: 550px;
 	color: #ffffff;
@@ -222,7 +224,7 @@ a {
 	left: 17px;
 }
 
-.bestimg{
+.bestimg {
 	position: relative;
 	z-index: 2;
 }
@@ -263,4 +265,64 @@ a {
 
 .contacts__phone {
 	float: right;
+}
+
+/***************HERO****************/
+
+.cntBlock_hero {
+	background-color: #121214;
+	min-width: 675px;
+}
+
+.h2 {
+	text-transform: uppercase;
+	font-size: 48px;
+	color: #ffffff;
+}
+
+.wrap_icon-list{
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.icon-list {
+	list-style: none;
+}
+
+.icon-list__icon {
+	display: inline-block;
+	width: 33%;
+	float: left;
+}
+
+.icon-list__icon::before {
+	display: block;
+	content: '';
+	background: url("../img/mangal_icon1.png") no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	width: 100%;
+	height: 264px;
+	margin: 0 auto;
+}
+
+
+.btn{
+	display: inline-block;
+}
+
+.btn_hero{
+	background-color: #ffffff;
+	color: #9a211a;
+	font-size: 35px;
+	border: 1px solid #9a211a;
+	padding: 3px 5px;
+}
+
+/*******************************@media*******************************************/
+
+@media (max-width: 550px) {
+	.cntBlock__container {
+		padding: 20% 0;
+	}
 }
