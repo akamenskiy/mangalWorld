@@ -1,0 +1,497 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline; }
+
+html {
+	line-height: 1; }
+
+ol, ul {
+	list-style: none; }
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0; }
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+	vertical-align: middle; }
+
+q, blockquote {
+	quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+	content: "";
+	content: none; }
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+a img {
+	border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+	display: block; }
+
+img {
+	max-width: 100%; }
+
+@font-face {
+	font-family: flaticon;
+	src: url(../fonts/flaticon.eot);
+	src: url(../fonts/flaticon.svg);
+	src: url(../fonts/flaticon.ttf);
+	src: url(../fonts/flaticon.woff);
+	font-weight: normal;
+	font-style: normal; }
+
+@font-face {
+	font-family: Intro;
+	src: url(../fonts/Intro.otf) format("opentype");
+	font-weight: normal;
+	font-style: normal; }
+
+@font-face {
+	font-family: IntroInline;
+	src: url(../fonts/Intro_Inline.otf) format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: Lobster;
+	src: url(../fonts/Lobster.ttf);
+	font-weight: normal;
+	font-style: normal; }
+
+@font-face {
+	font-family: PFD;
+	src: url(../fonts/PFDinCondensedRegular.eot);
+	src: url(../fonts/PFDinCondensedRegular.ttf);
+	src: url(../fonts/PFDinCondensedRegular.woff);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: PFD_Light;
+	src: url(../fonts/PFDinCondensedLight.eot);
+	src: url(../fonts/PFDinCondensedLight.ttf);
+	src: url(../fonts/PFDinCondensedLight.woff);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: PFD_Medium;
+	src: url(../fonts/PFDinCondensedMedium.eot);
+	src: url(../fonts/PFDinCondensedMedium.ttf);
+	src: url(../fonts/PFDinCondensedMedium.woff);
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	font-size: 100%; }
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center; }
+
+.clearfix::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.header {
+	width: 100%;
+	min-width: 1024px;
+	max-width: 1900px;
+	background: url("../img/header.jpg") no-repeat bottom center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-box-shadow: inset 0 0 0 128px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: inset 0 0 0 128px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0 0 0 350px rgba(0, 0, 0, 0.5);
+}
+
+.header__container{
+	position: relative;
+	width: 550px;
+	margin: 0 auto;
+	padding: 150px 0;
+}
+
+.header__h1 {
+	font-family: "Intro", sans-serif;
+	font-size: 62px;
+	color: #ffffff;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.header__h1::after{
+	content: "Мир мангалов";
+	font-family: "Intro", sans-serif;
+	font-size: 62px;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0);
+	-webkit-text-stroke: 1px #ffffff;
+	position: absolute;
+	top: 2px;
+	left: 17px;
+}
+
+.header__h2_best{
+	margin-bottom: 118px;
+	position: relative;
+}
+
+.header__h2_best span{
+	font-family: "Lobster", sans-serif;
+	font-size: 85px;
+	color: #ffffff;
+	position: absolute;
+	height: 1060px;
+	width: 20px;
+	top: 0;
+	left:250px;
+	-webkit-transform-origin:bottom center;
+	-moz-transform-origin:bottom center;
+	-ms-transform-origin:bottom center;
+	-o-transform-origin:bottom center;
+	transform-origin:bottom center;
+	z-index: 10;
+}
+
+.char1 {
+	-webkit-transform: rotate(-14deg);
+	-moz-transform: rotate(-14deg);
+	-ms-transform: rotate(-14deg);
+	-o-transform: rotate(-14deg);
+	transform: rotate(-14deg);
+}
+
+.char1::after{
+	content: "b";
+	font-family: "Lobster", sans-serif;
+	font-size: 85px;
+	color: rgba(255, 255, 255, 0);
+	position: absolute;
+	top: 2px;
+	left: 3px;
+	-webkit-text-stroke: 1px #9a211a;
+	z-index: -1;
+}
+
+.char2 {
+	-webkit-transform: rotate(-11.8deg);
+	-moz-transform: rotate(-11.8deg);
+	-ms-transform: rotate(-11.8deg);
+	-o-transform: rotate(-11.8deg);
+	transform: rotate(-11.8deg);
+}
+
+.char2::after{
+	content: "e";
+	font-family: "Lobster", sans-serif;
+	font-size: 85px;
+	color: rgba(255, 255, 255, 0);
+	position: absolute;
+	top: 2px;
+	left: 3px;
+	-webkit-text-stroke: 1px #9a211a;
+	z-index: -1;
+}
+
+.char3 {
+	-webkit-transform: rotate(-10.3deg);
+	-moz-transform: rotate(-10.3deg);
+	-ms-transform: rotate(-10.3deg);
+	-o-transform: rotate(-10.3deg);
+	transform: rotate(-10.3deg);
+}
+
+.char3::after{
+	content: "s";
+	font-family: "Lobster", sans-serif;
+	font-size: 85px;
+	color: rgba(255, 255, 255, 0);
+	position: absolute;
+	top: 2px;
+	left: 3px;
+	-webkit-text-stroke: 1px #9a211a;
+	z-index: -1;
+}
+
+.char4 {
+	-webkit-transform: rotate(-8.5deg);
+	-moz-transform: rotate(-8.5deg);
+	-ms-transform: rotate(-8.5deg);
+	-o-transform: rotate(-8.5deg);
+	transform: rotate(-8.5deg);
+}
+
+.char4::after{
+	content: "t";
+	font-family: "Lobster", sans-serif;
+	font-size: 85px;
+	color: rgba(255, 255, 255, 0);
+	position: absolute;
+	top: 2px;
+	left: 3px;
+	-webkit-text-stroke: 1px #9a211a;
+	z-index: -1;
+}
+
+.char5 {
+	-webkit-transform: rotate(-6.2deg);
+	-moz-transform: rotate(-6.2deg);
+	-ms-transform: rotate(-6.2deg);
+	-o-transform: rotate(-6.2deg);
+	transform: rotate(-6.2deg);
+}
+
+.char5::after{
+	content: "i";
+	font-family: "Lobster", sans-serif;
+	font-size: 85px;
+	color: rgba(255, 255, 255, 0);
+	position: absolute;
+	top: 2px;
+	left: 3px;
+	-webkit-text-stroke: 1px #9a211a;
+	z-index: -1;
+}
+
+.char6 {
+	-webkit-transform: rotate(-4.9deg);
+	-moz-transform: rotate(-4.9deg);
+	-ms-transform: rotate(-4.9deg);
+	-o-transform: rotate(-4.9deg);
+	transform: rotate(-4.9deg);
+}
+
+.char6::after{
+	content: "n";
+	font-family: "Lobster", sans-serif;
+	font-size: 85px;
+	color: rgba(255, 255, 255, 0);
+	position: absolute;
+	top: 2px;
+	left: 3px;
+	-webkit-text-stroke: 1px #9a211a;
+	z-index: -1;
+}
+
+.char7 {
+	-webkit-transform: rotate(-1.3deg);
+	-moz-transform: rotate(-1.3deg);
+	-ms-transform: rotate(-1.3deg);
+	-o-transform: rotate(-1.3deg);
+	transform: rotate(-1.3deg);
+}
+
+.char7::after{
+	content: "t";
+	font-family: "Lobster", sans-serif;
+	font-size: 85px;
+	color: rgba(255, 255, 255, 0);
+	position: absolute;
+	top: 2px;
+	left: 3px;
+	-webkit-text-stroke: 1px #9a211a;
+	z-index: -1;
+}
+
+.char8 {
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+.char8::after{
+	content: "h";
+	font-family: "Lobster", sans-serif;
+	font-size: 85px;
+	color: rgba(255, 255, 255, 0);
+	position: absolute;
+	top: 2px;
+	left: 3px;
+	-webkit-text-stroke: 1px #9a211a;
+	z-index: -1;
+}
+
+.char9 {
+	-webkit-transform: rotate(2.4deg);
+	-moz-transform: rotate(2.4deg);
+	-ms-transform: rotate(2.4deg);
+	-o-transform: rotate(2.4deg);
+	transform: rotate(2.4deg);
+}
+
+.char9::after{
+	content: "e";
+	font-family: "Lobster", sans-serif;
+	font-size: 85px;
+	color: rgba(255, 255, 255, 0);
+	position: absolute;
+	top: 2px;
+	left: 3px;
+	-webkit-text-stroke: 1px #9a211a;
+	z-index: -1;
+}
+
+.char10 {
+	-webkit-transform: rotate(5.8deg);
+	-moz-transform: rotate(5.8deg);
+	-ms-transform: rotate(5.8deg);
+	-o-transform: rotate(5.8deg);
+	transform: rotate(5.8deg);
+}
+
+.char10::after{
+	content: "w";
+	font-family: "Lobster", sans-serif;
+	font-size: 85px;
+	color: rgba(255, 255, 255, 0);
+	position: absolute;
+	top: 2px;
+	left: 3px;
+	-webkit-text-stroke: 1px #9a211a;
+	z-index: -1;
+}
+
+.char11 {
+	-webkit-transform: rotate(9.1deg);
+	-moz-transform: rotate(9.1deg);
+	-ms-transform: rotate(9.1deg);
+	-o-transform: rotate(9.1deg);
+	transform: rotate(9.1deg);
+}
+
+.char11::after{
+	content: "o";
+	font-family: "Lobster", sans-serif;
+	font-size: 85px;
+	color: rgba(255, 255, 255, 0);
+	position: absolute;
+	top: 2px;
+	left: 3px;
+	-webkit-text-stroke: 1px #9a211a;
+	z-index: -1;
+}
+
+.char12 {
+	-webkit-transform: rotate(11deg);
+	-moz-transform: rotate(11deg);
+	-ms-transform: rotate(11deg);
+	-o-transform: rotate(11deg);
+	transform: rotate(11deg);
+}
+
+.char12::after{
+	content: "r";
+	font-family: "Lobster", sans-serif;
+	font-size: 85px;
+	color: rgba(255, 255, 255, 0);
+	position: absolute;
+	top: 2px;
+	left: 3px;
+	-webkit-text-stroke: 1px #9a211a;
+	z-index: -1;
+}
+
+.char13 {
+	-webkit-transform: rotate(12.8deg);
+	-moz-transform: rotate(12.8deg);
+	-ms-transform: rotate(12.8deg);
+	-o-transform: rotate(12.8deg);
+	transform: rotate(12.8deg);
+}
+
+.char13::after{
+	content: "l";
+	font-family: "Lobster", sans-serif;
+	font-size: 85px;
+	color: rgba(255, 255, 255, 0);
+	position: absolute;
+	top: 2px;
+	left: 3px;
+	-webkit-text-stroke: 1px #9a211a;
+	z-index: -1;
+}
+
+.char14 {
+	-webkit-transform: rotate(14deg);
+	-moz-transform: rotate(14deg);
+	-ms-transform: rotate(14deg);
+	-o-transform: rotate(14deg);
+	transform: rotate(14deg);
+}
+
+.char14::after{
+	content: "d";
+	font-family: "Lobster", sans-serif;
+	font-size: 85px;
+	color: rgba(255, 255, 255, 0);
+	position: absolute;
+	top: 2px;
+	left: 3px;
+	-webkit-text-stroke: 1px #9a211a;
+	z-index: -1;
+}
+
+.header__h2_uni{
+	font-family: "PFD_Medium", sans-serif;
+	font-size: 54px;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 0 #9a211a;
+	letter-spacing: 2px;
+	margin-bottom: 33px;
+}
+
+.header__hr {
+	border: none;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #9a211a;
+	margin-bottom: 33px;
+}
+
+.header__contacts{
+	font-family:"PFD_Medium", sans-serif;
+	font-size: 36px;
+	color: #ffffff;
+	text-transform: uppercase;
+	display: block;
+}
+
+.header__contacts_mail{
+	float: left;
+}
+
+.header__contacts_phone{
+	float: right;
+}
