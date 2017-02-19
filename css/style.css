@@ -1,3 +1,5 @@
+/*****************************CSS Reset******************************************/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,43 +18,59 @@ time, mark, audio, video {
 	border: 0;
 	font: inherit;
 	font-size: 100%;
-	vertical-align: baseline; }
+	vertical-align: baseline;
+}
 
 html {
-	line-height: 1; }
+	line-height: 1;
+}
 
 ol, ul {
-	list-style: none; }
+	list-style: none;
+}
 
 table {
 	border-collapse: collapse;
-	border-spacing: 0; }
+	border-spacing: 0;
+}
 
 caption, th, td {
 	text-align: left;
 	font-weight: normal;
-	vertical-align: middle; }
+	vertical-align: middle;
+}
 
 q, blockquote {
-	quotes: none; }
+	quotes: none;
+}
 
 q:before, q:after, blockquote:before, blockquote:after {
 	content: "";
-	content: none; }
-
-a {
-	text-decoration: none;
-	color: #ffffff;
+	content: none;
 }
 
 a img {
-	border: none; }
+	border: none;
+}
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-	display: block; }
+	display: block;
+}
 
 img {
-	max-width: 100%; }
+	max-width: 100%;
+}
+
+html {
+	font-size: 100%;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*********************************Fonts********************************************/
 
 @font-face {
 	font-family: flaticon;
@@ -61,13 +79,15 @@ img {
 	src: url(../fonts/flaticon.ttf);
 	src: url(../fonts/flaticon.woff);
 	font-weight: normal;
-	font-style: normal; }
+	font-style: normal;
+}
 
 @font-face {
 	font-family: Intro;
 	src: url(../fonts/Intro.otf) format("opentype");
 	font-weight: normal;
-	font-style: normal; }
+	font-style: normal;
+}
 
 @font-face {
 	font-family: IntroInline;
@@ -75,11 +95,13 @@ img {
 	font-weight: normal;
 	font-style: normal;
 }
+
 @font-face {
-	font-family: Lobster;
+	font-family: Lobster_1-3;
 	src: url(../fonts/Lobster.ttf);
 	font-weight: normal;
-	font-style: normal; }
+	font-style: normal;
+}
 
 @font-face {
 	font-family: PFD;
@@ -108,22 +130,35 @@ img {
 	font-style: normal;
 }
 
-html {
-	font-size: 100%; }
+/*********************************Main CSS******************************************/
 
-* {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	text-align: center; }
-
-.clearfix::after{
-	content: '';
-	display: table;
-	clear: both;
+a {
+	text-decoration: none;
+	color: #ffffff;
 }
 
-.header {
-	width: 100%;
+.tac {
+	text-align: center;
+}
+
+.font_1 {
+	font-family: "Intro", sans-serif;
+}
+
+.font_2 {
+	font-family: "Lobster", sans-serif;
+}
+
+.font_3 {
+	font-family: "PFD_Medium", sans-serif;
+}
+
+.clearfix::after {
+	content: '';
+	display: table;
+}
+
+.cntBlock {
 	min-width: 1024px;
 	max-width: 1900px;
 	background: url("../img/header.jpg") no-repeat bottom center;
@@ -134,26 +169,21 @@ html {
 	box-shadow: inset 0 0 0 350px rgba(0, 0, 0, 0.5);
 }
 
-.header__container{
-	position: relative;
+.cntBlock__container {
 	width: 550px;
 	margin: 0 auto;
 	padding: 150px 0;
 }
 
-.header__h1 {
-	font-family: "Intro", sans-serif;
-	font-size: 62px;
+.h1 {
+	font-size: 3.875em;
 	color: #ffffff;
 	text-transform: uppercase;
 	position: relative;
 }
 
-.header__h1::after{
+.h1_logo::after {
 	content: "Мир мангалов";
-	font-family: "Intro", sans-serif;
-	font-size: 62px;
-	text-transform: uppercase;
 	color: rgba(255, 255, 255, 0);
 	-webkit-text-stroke: 1px #ffffff;
 	position: absolute;
@@ -161,26 +191,25 @@ html {
 	left: 17px;
 }
 
-.header__h2_best{
+.rounded {
 	margin-bottom: 118px;
 	position: relative;
 }
 
-.header__h2_best span{
-	font-family: "Lobster", sans-serif;
-	font-size: 85px;
+.rounded span {
+	font-size: 5.313em;
 	color: #ffffff;
 	position: absolute;
-	height: 1060px;
-	width: 20px;
+	height: 1220px;
+	width: 0;
 	top: 0;
-	left:250px;
-	-webkit-transform-origin:bottom center;
-	-moz-transform-origin:bottom center;
-	-ms-transform-origin:bottom center;
-	-o-transform-origin:bottom center;
-	transform-origin:bottom center;
-	z-index: 10;
+	left: 268px;
+	-webkit-transform-origin: bottom center;
+	-moz-transform-origin: bottom center;
+	-ms-transform-origin: bottom center;
+	-o-transform-origin: bottom center;
+	transform-origin: bottom center;
+	z-index: 2;
 }
 
 .char1 {
@@ -191,10 +220,8 @@ html {
 	transform: rotate(-14deg);
 }
 
-.char1::after{
+.char1::after {
 	content: "b";
-	font-family: "Lobster", sans-serif;
-	font-size: 85px;
 	color: rgba(255, 255, 255, 0);
 	position: absolute;
 	top: 2px;
@@ -211,10 +238,8 @@ html {
 	transform: rotate(-11.8deg);
 }
 
-.char2::after{
+.char2::after {
 	content: "e";
-	font-family: "Lobster", sans-serif;
-	font-size: 85px;
 	color: rgba(255, 255, 255, 0);
 	position: absolute;
 	top: 2px;
@@ -231,10 +256,8 @@ html {
 	transform: rotate(-10.3deg);
 }
 
-.char3::after{
+.char3::after {
 	content: "s";
-	font-family: "Lobster", sans-serif;
-	font-size: 85px;
 	color: rgba(255, 255, 255, 0);
 	position: absolute;
 	top: 2px;
@@ -251,10 +274,8 @@ html {
 	transform: rotate(-8.5deg);
 }
 
-.char4::after{
+.char4::after {
 	content: "t";
-	font-family: "Lobster", sans-serif;
-	font-size: 85px;
 	color: rgba(255, 255, 255, 0);
 	position: absolute;
 	top: 2px;
@@ -271,10 +292,8 @@ html {
 	transform: rotate(-6.2deg);
 }
 
-.char5::after{
+.char5::after {
 	content: "i";
-	font-family: "Lobster", sans-serif;
-	font-size: 85px;
 	color: rgba(255, 255, 255, 0);
 	position: absolute;
 	top: 2px;
@@ -291,10 +310,8 @@ html {
 	transform: rotate(-4.9deg);
 }
 
-.char6::after{
+.char6::after {
 	content: "n";
-	font-family: "Lobster", sans-serif;
-	font-size: 85px;
 	color: rgba(255, 255, 255, 0);
 	position: absolute;
 	top: 2px;
@@ -311,10 +328,8 @@ html {
 	transform: rotate(-1.3deg);
 }
 
-.char7::after{
+.char7::after {
 	content: "t";
-	font-family: "Lobster", sans-serif;
-	font-size: 85px;
 	color: rgba(255, 255, 255, 0);
 	position: absolute;
 	top: 2px;
@@ -331,10 +346,8 @@ html {
 	transform: rotate(0deg);
 }
 
-.char8::after{
+.char8::after {
 	content: "h";
-	font-family: "Lobster", sans-serif;
-	font-size: 85px;
 	color: rgba(255, 255, 255, 0);
 	position: absolute;
 	top: 2px;
@@ -351,10 +364,8 @@ html {
 	transform: rotate(2.4deg);
 }
 
-.char9::after{
+.char9::after {
 	content: "e";
-	font-family: "Lobster", sans-serif;
-	font-size: 85px;
 	color: rgba(255, 255, 255, 0);
 	position: absolute;
 	top: 2px;
@@ -371,10 +382,8 @@ html {
 	transform: rotate(5.8deg);
 }
 
-.char10::after{
+.char10::after {
 	content: "w";
-	font-family: "Lobster", sans-serif;
-	font-size: 85px;
 	color: rgba(255, 255, 255, 0);
 	position: absolute;
 	top: 2px;
@@ -391,10 +400,8 @@ html {
 	transform: rotate(9.1deg);
 }
 
-.char11::after{
+.char11::after {
 	content: "o";
-	font-family: "Lobster", sans-serif;
-	font-size: 85px;
 	color: rgba(255, 255, 255, 0);
 	position: absolute;
 	top: 2px;
@@ -411,10 +418,8 @@ html {
 	transform: rotate(11deg);
 }
 
-.char12::after{
+.char12::after {
 	content: "r";
-	font-family: "Lobster", sans-serif;
-	font-size: 85px;
 	color: rgba(255, 255, 255, 0);
 	position: absolute;
 	top: 2px;
@@ -431,10 +436,8 @@ html {
 	transform: rotate(12.8deg);
 }
 
-.char13::after{
+.char13::after {
 	content: "l";
-	font-family: "Lobster", sans-serif;
-	font-size: 85px;
 	color: rgba(255, 255, 255, 0);
 	position: absolute;
 	top: 2px;
@@ -451,10 +454,8 @@ html {
 	transform: rotate(14deg);
 }
 
-.char14::after{
+.char14::after {
 	content: "d";
-	font-family: "Lobster", sans-serif;
-	font-size: 85px;
 	color: rgba(255, 255, 255, 0);
 	position: absolute;
 	top: 2px;
@@ -463,9 +464,8 @@ html {
 	z-index: -1;
 }
 
-.header__h2_uni{
-	font-family: "PFD_Medium", sans-serif;
-	font-size: 54px;
+.slogan {
+	font-size: 3.375em;
 	color: #ffffff;
 	text-transform: uppercase;
 	text-shadow: 2px 2px 0 #9a211a;
@@ -473,25 +473,23 @@ html {
 	margin-bottom: 33px;
 }
 
-.header__hr {
-	border: none;
+.hr {
 	border-top: 1px solid #ffffff;
 	border-bottom: 1px solid #9a211a;
 	margin-bottom: 33px;
 }
 
-.header__contacts{
-	font-family:"PFD_Medium", sans-serif;
-	font-size: 36px;
+.cntBlock__contacts {
+	font-size: 2.250em;
 	color: #ffffff;
 	text-transform: uppercase;
 	display: block;
 }
 
-.header__contacts_mail{
+.cntBlock__contacts_mail {
 	float: left;
 }
 
-.header__contacts_phone{
+.cntBlock__contacts_phone {
 	float: right;
 }
