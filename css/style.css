@@ -171,7 +171,7 @@ a {
 	background-size: cover;
 	z-index: -1;
 	position: relative;
-	min-width: 675px;
+	min-width: 675px; /*Без этого какая-то шляпа творится на планшете и телефоне с сайтом*/
 }
 
 .cntBlock_header::after {
