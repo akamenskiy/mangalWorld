@@ -139,8 +139,10 @@ a {
 	color: #ffffff;
 }
 
-.tac {
-	text-align: center;
+.h1 {
+	font-size: 3.75em;
+	font-family: "Intro", sans-serif;
+	cursor: default;
 }
 
 .font_1 {
@@ -155,12 +157,20 @@ a {
 	font-family: "PFD_Medium", sans-serif;
 }
 
+.hr {
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #9a211a;
+	width: 550px;
+	margin: 0 auto;
+}
+
 .clearfix::after {
 	content: '';
 	display: table;
 	clear: both;
 }
 
+/* cntBlock */
 .cntBlock {
 	width: 100%;
 }
@@ -169,72 +179,78 @@ a {
 	background: url("../img/header.jpg") no-repeat bottom center;
 	-webkit-background-size: cover;
 	background-size: cover;
-	min-width: 675px; /*Без этого какая-то шляпа творится на планшете и телефоне с сайтом*/
+	min-width: 1024px;
+	text-align: center;
+}
+
+.cntBlock_with-blackout{
 	position: relative;
 }
 
-.blackout {
+.cntBlock_blackout {
 	position: absolute;
-	width: 100%;
-	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	background: rgba(0, 0, 0, 0.5);
 }
 
-.cntBlock__container {
+/* .container */
+
+.container {
 	width: 90%;
+	min-width: 1024px;
+	max-width: 1400px;
 	margin: 0 auto;
-	padding: 10% 0;
+}
+
+/* header */
+
+.header{
+	padding: 7.5% 0;
 	position: relative;
 }
 
-.wrap {
-	margin-bottom: 19px;
-}
-
-.wrap_uni {
-	margin-bottom: 22px;
-}
-
-.wrap_hr {
-	margin: 29px;
-}
-
-.h1 {
-	font-size: 3.75em;
-}
-
-.h1_logo {
+.header__h1{
+	margin-bottom: 30px;
 	display: inline-block;
-	width: 550px;
-	color: #ffffff;
+	color: #fff;
 	text-transform: uppercase;
 	position: relative;
 }
 
-.h1_logo::after {
-	content: "Мир мангалов";
+.header__h1::after {
+	content: attr(data-name);
 	color: rgba(255, 255, 255, 0);
-	-webkit-text-stroke: 1px #ffffff;
+	-webkit-text-stroke: 1px #fff;
 	position: absolute;
 	top: 2px;
-	left: 26px;
+	left: 2px;
+	width: 100%;
 }
 
-.slogan {
+.header__img-wrap{
+	margin-bottom: 15px;
+}
+
+.header__img{
+
+}
+
+.header__slogan{
 	font-size: 3.5em;
-	color: #ffffff;
+	color: #fff;
 	text-transform: uppercase;
 	text-shadow: 4px 2px 0 #9a211a;
+	cursor: default;
 }
 
-.hr {
-	border-top: 1px solid #ffffff;
-	border-bottom: 1px solid #9a211a;
-	width: 550px;
-	margin: 0 auto;
+.header__hr{
+	margin: 25px auto;
 }
 
-.contacts {
+.header__contacts {
 	font-size: 2.250em;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -243,16 +259,17 @@ a {
 	margin: 0 auto;
 }
 
-.contacts__mail {
+.header__mail {
 	float: left;
 }
 
-.contacts__phone {
+.header__phone {
 	float: right;
 }
 
-/***************HERO****************/
 
+/***************HERO****************/
+/*
 .cntBlock_hero {
 	background-color: #121214;
 	min-width: 675px;
@@ -318,11 +335,11 @@ a {
 	padding: 30px 80px;
 	text-transform: uppercase;
 }
-
+*/
 /*******************************@media*******************************************/
 
-@media (max-width: 550px) {
-	.cntBlock__container {
-		padding: 20% 0;
-	}
-}
+/*@media (max-width: 550px) {*/
+	/*.cntBlock__container {*/
+		/*padding: 20% 0;*/
+	/*}*/
+/*}*/
