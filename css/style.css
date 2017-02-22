@@ -136,7 +136,7 @@ html {
 
 a {
 	text-decoration: none;
-	color: #ffffff;
+	color: #fff;
 }
 
 .h1 {
@@ -158,7 +158,7 @@ a {
 }
 
 .hr {
-	border-top: 1px solid #ffffff;
+	border-top: 1px solid #fff;
 	border-bottom: 1px solid #9a211a;
 	width: 550px;
 	margin: 0 auto;
@@ -252,7 +252,7 @@ a {
 
 .header__contacts {
 	font-size: 2.250em;
-	color: #ffffff;
+	color: #fff;
 	text-transform: uppercase;
 	display: block;
 	width: 550px;
@@ -305,7 +305,7 @@ a {
 	float: left;
 }
 
-.icon-list__icon_hero{
+.icon-list__icon_hero {
 	width: 33%;
 	padding: 0 15px;
 }
@@ -329,7 +329,7 @@ a {
 
 .icon-cost {
 	font-size: 3.25em;
-	color: #ffffff;
+	color: #fff;
 	text-transform: uppercase;
 	text-shadow: 4px 2px 0 #9a211a;
 }
@@ -341,12 +341,38 @@ a {
 }
 
 .btn_hero {
-	background-color: #ffffff;
+	background-color: #fff;
 	color: #9a211a;
 	font-size: 1.75em;
 	border: 2px solid #9a211a;
 	padding: 30px 80px;
 	text-transform: uppercase;
+}
+
+/*********************Delivery-Banner*************************/
+
+.cntBlock_del-bnr {
+	background: url("../img/delivery_bg.jpg") no-repeat top;
+	-webkit-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	min-width: 1024px;
+}
+
+.del-bnr {
+	padding: 7.5% 0;
+}
+
+.del-bnr__h2 {
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.free {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 4.5em;
 }
 
 /*******************************@media*******************************************/
