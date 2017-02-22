@@ -131,6 +131,22 @@ html {
 }
 
 /*********************************Main CSS******************************************/
+/*******************fonts********************/
+.font_1 {
+	font-family: "Intro", sans-serif;
+}
+
+.font_2 {
+	font-family: "PFD_Light", sans-serif;
+}
+
+.font_3 {
+	font-family: "PFD_Medium", sans-serif;
+}
+
+.font_4 {
+	font-family: 'Open sans', sans-serif;
+}
 
 /***********HEADER***********/
 
@@ -143,18 +159,6 @@ a {
 	font-size: 3.75em;
 	font-family: "Intro", sans-serif;
 	cursor: default;
-}
-
-.font_1 {
-	font-family: "Intro", sans-serif;
-}
-
-.font_2 {
-	font-family: "PFD_Light", sans-serif;
-}
-
-.font_3 {
-	font-family: "PFD_Medium", sans-serif;
 }
 
 .hr {
@@ -291,7 +295,7 @@ a {
 /***icon-list***/
 
 .hero__icon-list {
-	max-width: 700px;
+	max-width: 965px;
 	margin: 0 auto 60px;
 	color: #fff;
 }
@@ -310,7 +314,7 @@ a {
 	padding: 0 15px;
 }
 
-.icon-list__icon::before {
+.icon-list__icon_hero::before {
 	display: block;
 	content: '';
 	background: url("../img/mangal_icon1.png") no-repeat;
@@ -373,6 +377,49 @@ a {
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 4.5em;
+}
+
+/********************Features*************************/
+
+.cntBlock_features {
+	background-color: #320b0b;
+	text-align: center;
+	min-width: 1024px;
+}
+
+.features {
+	padding: 7.5% 0;
+}
+
+.features__h2 {
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 60px;
+}
+
+.features__icon-list {
+	max-width: 965px;
+	margin: 0 auto;
+	color: #fff;
+}
+
+.icon-list__icon_features {
+	width: 33%;
+	padding: 0 15px;
+}
+
+.icon-list__icon_features::before {
+	display: block;
+	content: attr(data-name);
+	font-family: "Intro", sans-serif;
+	font-size: 80px;
+	text-shadow: 3px 3px 0 #320b0b, 4px 4px 0 #fff;
+	width: 100%;
+	margin: 0 auto 25px;
+}
+
+.icon-desc {
+	font-size: 1em;
 }
 
 /*******************************@media*******************************************/
