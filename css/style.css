@@ -422,6 +422,7 @@ a {
 
 .icon-desc {
 	font-size: 1em;
+	line-height: 1.5em;
 }
 
 /************************Request*****************************/
@@ -446,6 +447,7 @@ a {
 	margin: 0 auto 60px;
 	width: 820px;
 	color: #fff;
+	line-height: 1.5em;
 }
 
 .desc {
@@ -479,5 +481,65 @@ a {
 .request-form__input_phone {
 	float: right;
 }
+
+/*******************************Testimonials*****************************/
+
+.cntBlock_testimonials{
+	background: #320b0b;
+	text-align: center;
+	min-width: 1024px;
+}
+
+.testimonials{
+	padding: 7.5% 0;
+}
+
+.testimonials__h2{
+	color: #fff;
+	margin-bottom: 60px;
+}
+
+.testimonials__img-wrap{
+	margin-bottom: 30px;
+}
+
+.testimonials__item{
+	color: #fff;
+	line-height: 1.5em;
+	width: 820px;
+	margin: 0 auto 30px;
+}
+
+.testimonials__desc{
+	font-style: italic;
+	margin-bottom: 15px;
+}
+
+.testimonials_author{
+
+}
+
+.bullets{
+	width: 200px;
+	margin: 0 auto;
+}
+
+.bullets__item{
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	margin: 0 5px;
+	border: 1px solid #fff;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: #320b0b;
+}
+
+.bullets__item.active{
+	background: #fff;
+}
+
+
 
 /*******************************@media*******************************************/
