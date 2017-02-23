@@ -540,6 +540,36 @@ a {
 	background: #fff;
 }
 
+/*******************************footer***********************************/
 
+.cntBlock_footer{
+	background: url("../img/footer_bg.JPG") no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	min-width: 1024px;
+}
+
+.footer{
+	padding: 7.5% 0;
+	position: relative;
+}
+
+.footer__h1{
+	display: inline-block;
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.footer__h1::after{
+	content: attr(data-name);
+	color: rgba(255, 255, 255, 0);
+	-webkit-text-stroke: 1px #fff;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 100%;
+}
 
 /*******************************@media*******************************************/
