@@ -148,6 +148,10 @@ html {
 	font-family: 'Open sans', sans-serif;
 }
 
+.font_5 {
+	font-family: "Trebuchet MS", sans-serif;
+}
+
 /***********HEADER***********/
 
 a {
@@ -340,17 +344,15 @@ a {
 
 /***btn***/
 
-.btn {
-	display: inline-block;
-}
-
-.btn_hero {
+.btn_order {
 	background-color: #fff;
 	color: #9a211a;
 	font-size: 1.75em;
 	border: 2px solid #9a211a;
 	padding: 30px 80px;
 	text-transform: uppercase;
+	display: block;
+	margin: 0 auto;
 }
 
 /*********************Delivery-Banner*************************/
@@ -382,7 +384,7 @@ a {
 /********************Features*************************/
 
 .cntBlock_features {
-	background-color: #320b0b;
+	background: #320b0b;
 	text-align: center;
 	min-width: 1024px;
 }
@@ -420,6 +422,62 @@ a {
 
 .icon-desc {
 	font-size: 1em;
+}
+
+/************************Request*****************************/
+
+.cntBlock_request {
+	background: #121214;
+	text-align: center;
+	min-width: 1024px;
+}
+
+.request {
+	padding: 7.5% 0;
+}
+
+.request__h2 {
+	color: #fce9d6;
+	margin-bottom: 60px;
+	text-transform: uppercase;
+}
+
+.request__desc {
+	margin: 0 auto 60px;
+	width: 820px;
+	color: #fff;
+}
+
+.desc {
+	font-size: 1em;
+}
+
+.request__inputs {
+	width: 550px;
+	margin: 0 auto;
+}
+
+.request-form__input {
+	color: #fff;
+	border: none;
+	border-bottom: 1px solid #79797A;
+	background: none;
+	width: 45%;
+	margin-bottom: 60px;
+}
+
+.request-form__input:focus {
+	background: none;
+	border-bottom: 1px solid #E8E8E8;
+	outline: none;
+}
+
+.request-form__input_name {
+	float: left;
+}
+
+.request-form__input_phone {
+	float: right;
 }
 
 /*******************************@media*******************************************/
