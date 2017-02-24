@@ -169,7 +169,7 @@ a {
 	border-top: 1px solid #fff;
 	border-bottom: 1px solid #9a211a;
 	width: 550px;
-	margin: 0 auto;
+	margin: 25px auto;
 }
 
 .clearfix::after {
@@ -181,14 +181,14 @@ a {
 /* cntBlock */
 .cntBlock {
 	width: 100%;
+	min-width: 1024px;
+	text-align: center;
 }
 
 .cntBlock_header {
 	background: url("../img/header.jpg") no-repeat bottom center;
 	-webkit-background-size: cover;
 	background-size: cover;
-	min-width: 1024px;
-	text-align: center;
 }
 
 .cntBlock_with-blackout {
@@ -211,24 +211,27 @@ a {
 	min-width: 1024px;
 	max-width: 1400px;
 	margin: 0 auto;
+	padding: 7.5% 0;
 }
 
 /* header */
 
 .header {
-	padding: 7.5% 0;
 	position: relative;
 }
 
-.header__h1 {
+header__title {
 	margin-bottom: 30px;
+}
+
+.title {
 	display: inline-block;
 	color: #fff;
 	text-transform: uppercase;
 	position: relative;
 }
 
-.header__h1::after {
+.title::after {
 	content: attr(data-name);
 	color: rgba(255, 255, 255, 0);
 	-webkit-text-stroke: 1px #fff;
@@ -254,11 +257,7 @@ a {
 	cursor: default;
 }
 
-.header__hr {
-	margin: 25px auto;
-}
-
-.header__contacts {
+.contacts {
 	font-size: 2.250em;
 	color: #fff;
 	text-transform: uppercase;
@@ -267,75 +266,56 @@ a {
 	margin: 0 auto;
 }
 
-.header__mail {
+.mail {
 	float: left;
 }
 
-.header__phone {
+.phone {
 	float: right;
 }
 
 /***************HERO****************/
 .cntBlock_hero {
 	background-color: #121214;
-	min-width: 1024px;
-	text-align: center;
 }
 
 .h2 {
 	font-size: 48px;
-}
-
-.hero {
-	padding: 7.5% 0;
+	text-transform: uppercase;
 }
 
 .hero__h2 {
-	text-transform: uppercase;
 	color: #fff;
 	margin-bottom: 60px;
 }
 
-/***icon-list***/
+/***list***/
 
-.hero__icon-list {
+.hero__list {
 	max-width: 965px;
 	margin: 0 auto 60px;
 	color: #fff;
 }
 
-.icon-list {
+.list {
 	list-style: none;
 }
 
-.icon-list__icon {
-	display: inline-block;
+.list__item {
 	float: left;
 }
 
-.icon-list__icon_hero {
+.list__item_hero {
 	width: 33%;
-	padding: 0 15px;
 }
 
-.icon-list__icon_hero::before {
-	display: block;
-	content: '';
-	background: url("../img/mangal_icon1.png") no-repeat;
-	-webkit-background-size: 100%;
-	background-size: 100%;
-	width: 100%;
-	height: 295px;
-	margin: 0 auto;
-}
-
-.icon-title {
+.list__title {
 	font-size: 2.4em;
 	text-transform: uppercase;
 	margin-bottom: 27px;
 }
 
-.icon-cost {
+.list__cost {
 	font-size: 3.25em;
 	color: #fff;
 	text-transform: uppercase;
@@ -361,21 +341,14 @@ a {
 	background: url("../img/delivery_bg.jpg") no-repeat top;
 	-webkit-background-size: cover;
 	background-size: cover;
-	text-align: center;
-	min-width: 1024px;
-}
-
-.del-bnr {
-	padding: 7.5% 0;
 }
 
 .del-bnr__h2 {
-	text-transform: uppercase;
 	color: #fff;
 	margin-bottom: 30px;
 }
 
-.free {
+.del-bnr__free {
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 4.5em;
@@ -385,43 +358,31 @@ a {
 
 .cntBlock_features {
 	background: #320b0b;
-	text-align: center;
-	min-width: 1024px;
-}
-
-.features {
-	padding: 7.5% 0;
 }
 
 .features__h2 {
-	text-transform: uppercase;
 	color: #fff;
 	margin-bottom: 60px;
 }
 
-.features__icon-list {
+.features__list {
 	max-width: 965px;
 	margin: 0 auto;
 	color: #fff;
 }
 
-.icon-list__icon_features {
+.list__item_features {
 	width: 33%;
 	padding: 0 15px;
 }
 
-.icon-list__icon_features::before {
-	display: block;
-	content: attr(data-name);
-	font-family: "Intro", sans-serif;
+.list__number {
 	font-size: 80px;
 	text-shadow: 3px 3px 0 #320b0b, 4px 4px 0 #fff;
-	width: 100%;
 	margin: 0 auto 25px;
 }
 
-.icon-desc {
-	font-size: 1em;
+.list-desc {
 	line-height: 1.5em;
 }
 
@@ -429,18 +390,11 @@ a {
 
 .cntBlock_request {
 	background: #121214;
-	text-align: center;
-	min-width: 1024px;
-}
-
-.request {
-	padding: 7.5% 0;
 }
 
 .request__h2 {
 	color: #fce9d6;
 	margin-bottom: 60px;
-	text-transform: uppercase;
 }
 
 .request__desc {
@@ -448,10 +402,6 @@ a {
 	width: 820px;
 	color: #fff;
 	line-height: 1.5em;
-}
-
-.desc {
-	font-size: 1em;
 }
 
 .request__inputs {
@@ -484,47 +434,41 @@ a {
 
 /*******************************Testimonials*****************************/
 
-.cntBlock_testimonials{
+.cntBlock_testimonials {
 	background: #320b0b;
-	text-align: center;
-	min-width: 1024px;
 }
 
-.testimonials{
-	padding: 7.5% 0;
-}
-
-.testimonials__h2{
+.testimonials__h2 {
 	color: #fff;
 	margin-bottom: 60px;
 }
 
-.testimonials__img-wrap{
+.testimonials__img-wrap {
 	margin-bottom: 30px;
 }
 
-.testimonials__item{
+.testimonials__item {
 	color: #fff;
 	line-height: 1.5em;
 	width: 820px;
 	margin: 0 auto 30px;
 }
 
-.testimonials__desc{
+.testimonials__desc {
 	font-style: italic;
 	margin-bottom: 15px;
 }
 
-.testimonials_author{
+.testimonials_author {
 
 }
 
-.bullets{
+.bullets {
 	width: 200px;
 	margin: 0 auto;
 }
 
-.bullets__item{
+.bullets__item {
 	display: inline-block;
 	width: 13px;
 	height: 13px;
@@ -536,40 +480,20 @@ a {
 	background: #320b0b;
 }
 
-.bullets__item.active{
+.bullets__item.active {
 	background: #fff;
 }
 
 /*******************************footer***********************************/
 
-.cntBlock_footer{
+.cntBlock_footer {
 	background: url("../img/footer_bg.JPG") no-repeat center;
 	-webkit-background-size: cover;
 	background-size: cover;
-	text-align: center;
-	min-width: 1024px;
 }
 
-.footer{
-	padding: 7.5% 0;
+.footer {
 	position: relative;
-}
-
-.footer__h1{
-	display: inline-block;
-	color: #fff;
-	text-transform: uppercase;
-	position: relative;
-}
-
-.footer__h1::after{
-	content: attr(data-name);
-	color: rgba(255, 255, 255, 0);
-	-webkit-text-stroke: 1px #fff;
-	position: absolute;
-	top: 2px;
-	left: 2px;
-	width: 100%;
 }
 
 /*******************************@media*******************************************/
