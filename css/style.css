@@ -452,6 +452,7 @@ header__title {
 	line-height: 1.5em;
 	width: 820px;
 	margin: 0 auto 30px;
+	outline: none;
 }
 
 .testimonials__desc {
@@ -463,12 +464,12 @@ header__title {
 
 }
 
-.bullets {
+.slick-dots {
 	width: 200px;
 	margin: 0 auto;
 }
 
-.bullets__item {
+.slick-dots li{
 	display: inline-block;
 	width: 13px;
 	height: 13px;
@@ -480,8 +481,12 @@ header__title {
 	background: #320b0b;
 }
 
-.bullets__item.active {
+li.slick-active{
 	background: #fff;
+}
+
+.slick-dots button{
+	opacity: 0;
 }
 
 /*******************************footer***********************************/
