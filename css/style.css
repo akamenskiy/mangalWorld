@@ -131,20 +131,7 @@ html {
 }
 
 /*********************************Main CSS******************************************/
-
-/***********HEADER***********/
-
-a {
-	text-decoration: none;
-	color: #ffffff;
-}
-
-.h1 {
-	font-size: 3.75em;
-	font-family: "Intro", sans-serif;
-	cursor: default;
-}
-
+/*******************fonts********************/
 .font_1 {
 	font-family: "Intro", sans-serif;
 }
@@ -157,11 +144,32 @@ a {
 	font-family: "PFD_Medium", sans-serif;
 }
 
+.font_4 {
+	font-family: 'Open sans', sans-serif;
+}
+
+.font_5 {
+	font-family: "Trebuchet MS", sans-serif;
+}
+
+/***********HEADER***********/
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.h1 {
+	font-size: 3.75em;
+	font-family: "Intro", sans-serif;
+	cursor: default;
+}
+
 .hr {
-	border-top: 1px solid #ffffff;
+	border-top: 1px solid #fff;
 	border-bottom: 1px solid #9a211a;
 	width: 550px;
-	margin: 0 auto;
+	margin: 25px auto;
 }
 
 .clearfix::after {
@@ -173,17 +181,17 @@ a {
 /* cntBlock */
 .cntBlock {
 	width: 100%;
+	min-width: 1024px;
+	text-align: center;
 }
 
 .cntBlock_header {
 	background: url("../img/header.jpg") no-repeat bottom center;
 	-webkit-background-size: cover;
 	background-size: cover;
-	min-width: 1024px;
-	text-align: center;
 }
 
-.cntBlock_with-blackout{
+.cntBlock_with-blackout {
 	position: relative;
 }
 
@@ -203,24 +211,27 @@ a {
 	min-width: 1024px;
 	max-width: 1400px;
 	margin: 0 auto;
+	padding: 7.5% 0;
 }
 
 /* header */
 
-.header{
-	padding: 7.5% 0;
+.header {
 	position: relative;
 }
 
-.header__h1{
+header__title {
 	margin-bottom: 30px;
+}
+
+.title {
 	display: inline-block;
 	color: #fff;
 	text-transform: uppercase;
 	position: relative;
 }
 
-.header__h1::after {
+.title::after {
 	content: attr(data-name);
 	color: rgba(255, 255, 255, 0);
 	-webkit-text-stroke: 1px #fff;
@@ -230,15 +241,15 @@ a {
 	width: 100%;
 }
 
-.header__img-wrap{
+.header__img-wrap {
 	margin-bottom: 15px;
 }
 
-.header__img{
+.header__img {
 
 }
 
-.header__slogan{
+.header__slogan {
 	font-size: 3.5em;
 	color: #fff;
 	text-transform: uppercase;
@@ -246,100 +257,243 @@ a {
 	cursor: default;
 }
 
-.header__hr{
-	margin: 25px auto;
-}
-
-.header__contacts {
+.contacts {
 	font-size: 2.250em;
-	color: #ffffff;
+	color: #fff;
 	text-transform: uppercase;
 	display: block;
 	width: 550px;
 	margin: 0 auto;
 }
 
-.header__mail {
+.mail {
 	float: left;
 }
 
-.header__phone {
+.phone {
 	float: right;
 }
 
-
 /***************HERO****************/
-/*
 .cntBlock_hero {
 	background-color: #121214;
-	min-width: 675px;
 }
 
 .h2 {
-	text-transform: uppercase;
 	font-size: 48px;
-	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.hero__h2 {
+	color: #fff;
 	margin-bottom: 60px;
 }
 
-.wrap_icon-list {
-	max-width: 700px;
+/***list***/
+
+.hero__list {
+	max-width: 965px;
 	margin: 0 auto 60px;
-	color: #ffffff;
+	color: #fff;
 }
 
-.icon-list {
+.list {
 	list-style: none;
 }
 
-.icon-list__icon {
-	display: inline-block;
-	width: 33%;
+.list__item {
 	float: left;
-	padding: 0 15px;
 }
 
-.icon-list__icon::before {
-	display: block;
-	content: '';
-	background: url("../img/mangal_icon1.png") no-repeat;
-	-webkit-background-size: 100%;
-	background-size: 100%;
-	width: 100%;
-	height: 264px;
-	margin: 0 auto;
+.list__item_hero {
+	width: 33%;
 }
 
-.icon-desc {
+.list__title {
 	font-size: 2.4em;
 	text-transform: uppercase;
 	margin-bottom: 27px;
 }
 
-.icon-cost {
+.list__cost {
 	font-size: 3.25em;
-	color: #ffffff;
+	color: #fff;
 	text-transform: uppercase;
 	text-shadow: 4px 2px 0 #9a211a;
 }
 
-.btn {
-	display: inline-block;
-}
+/***btn***/
 
-.btn_hero {
-	background-color: #ffffff;
+.btn_order {
+	background-color: #fff;
 	color: #9a211a;
 	font-size: 1.75em;
 	border: 2px solid #9a211a;
 	padding: 30px 80px;
 	text-transform: uppercase;
+	display: block;
+	margin: 0 auto;
 }
-*/
-/*******************************@media*******************************************/
 
-/*@media (max-width: 550px) {*/
-	/*.cntBlock__container {*/
-		/*padding: 20% 0;*/
-	/*}*/
-/*}*/
+/*********************Delivery-Banner*************************/
+
+.cntBlock_del-bnr {
+	background: url("../img/delivery_bg.jpg") no-repeat top;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.del-bnr__h2 {
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.del-bnr__free {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 4.5em;
+}
+
+/********************Features*************************/
+
+.cntBlock_features {
+	background: #320b0b;
+}
+
+.features__h2 {
+	color: #fff;
+	margin-bottom: 60px;
+}
+
+.features__list {
+	max-width: 965px;
+	margin: 0 auto;
+	color: #fff;
+}
+
+.list__item_features {
+	width: 33%;
+	padding: 0 15px;
+}
+
+.list__number {
+	font-size: 80px;
+	text-shadow: 3px 3px 0 #320b0b, 4px 4px 0 #fff;
+	margin: 0 auto 25px;
+}
+
+.list-desc {
+	line-height: 1.5em;
+}
+
+/************************Request*****************************/
+
+.cntBlock_request {
+	background: #121214;
+}
+
+.request__h2 {
+	color: #fce9d6;
+	margin-bottom: 60px;
+}
+
+.request__desc {
+	margin: 0 auto 60px;
+	width: 820px;
+	color: #fff;
+	line-height: 1.5em;
+}
+
+.request__inputs {
+	width: 550px;
+	margin: 0 auto;
+}
+
+.request-form__input {
+	color: #fff;
+	border: none;
+	border-bottom: 1px solid #79797A;
+	background: none;
+	width: 45%;
+	margin-bottom: 60px;
+}
+
+.request-form__input:focus {
+	background: none;
+	border-bottom: 1px solid #E8E8E8;
+	outline: none;
+}
+
+.request-form__input_name {
+	float: left;
+}
+
+.request-form__input_phone {
+	float: right;
+}
+
+/*******************************Testimonials*****************************/
+
+.cntBlock_testimonials {
+	background: #320b0b;
+}
+
+.testimonials__h2 {
+	color: #fff;
+	margin-bottom: 60px;
+}
+
+.testimonials__img-wrap {
+	margin-bottom: 30px;
+}
+
+.testimonials__item {
+	color: #fff;
+	line-height: 1.5em;
+	width: 820px;
+	margin: 0 auto 30px;
+}
+
+.testimonials__desc {
+	font-style: italic;
+	margin-bottom: 15px;
+}
+
+.testimonials_author {
+
+}
+
+.bullets {
+	width: 200px;
+	margin: 0 auto;
+}
+
+.bullets__item {
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	margin: 0 5px;
+	border: 1px solid #fff;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: #320b0b;
+}
+
+.bullets__item.active {
+	background: #fff;
+}
+
+/*******************************footer***********************************/
+
+.cntBlock_footer {
+	background: url("../img/footer_bg.JPG") no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.footer {
+	position: relative;
+}
+
+/*******************************@media*******************************************/
